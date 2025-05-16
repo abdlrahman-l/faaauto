@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroBanner = () => {
     return (
-        <section className="bg-white lg:grid lg:h-screen lg:place-content-center">
+        <section className="bg-white lg:grid lg:h-screen lg:place-content-center px-2 lg:px-10" id="hero-banner">
             <div
                 className="mx-auto md:grid md:grid-cols-2 md:items-center md:gap-5 p-3.5 lg:px-8 lg:py-2"
             >

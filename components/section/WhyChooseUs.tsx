@@ -78,7 +78,7 @@ const itemList = [
 
 const WhyChooseUs = () => {
     return (
-        <div className="bg-white p-2 min-h-screen rounded-md relative">
+        <div className="bg-white p-2 min-h-screen rounded-md relative" id="why-choose-us">
             <div aria-hidden="true" className="absolute inset-0 h-max w-full m-auto grid grid-cols-2  opacity-20">
                 <div className="blur-[106px] h-56 bg-gradient-to-br  to-blue-400 from-blue-700"></div>
                 <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-blue-600"></div>
