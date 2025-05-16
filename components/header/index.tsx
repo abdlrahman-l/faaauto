@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu"
 import Image from "next/image"
+import { UserConnectFormDialog } from "../form/UserConnectFormDialog"
+import { SVGProps } from "react"
 
 const menuList = [
     {
@@ -88,14 +90,16 @@ export default function Component() {
                 </NavigationMenu>
                 <div className="ml-auto flex gap-2">
                     {/* <Button variant="outline">Sign in</Button> */}
-                    <Button >Konsultasi</Button>
+                    <UserConnectFormDialog button={
+                        <Button>Konsultasi</Button>
+                    } />
                 </div>
             </header>
         </div>
     )
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: SVGProps<any>) {
     return (
         <svg
             {...props}

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { UserConnectFormDialog } from '../form/UserConnectFormDialog'
 
 const HeroBanner = () => {
     return (
@@ -27,12 +28,14 @@ const HeroBanner = () => {
                     </p>
                     <br />
                     <div className="mt-4 flex gap-4 sm:mt-6">
-                        <a
-                            className="inline-block rounded-md bg-blue-700 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-blue-600"
-                            href="#"
-                        >
-                            Konsultasi Gratis & Ajukan
-                        </a>
+                        <UserConnectFormDialog button={
+                            <a
+                                className="inline-block rounded-md bg-blue-700 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-blue-600"
+                                href="#"
+                            >
+                                Konsultasi Gratis & Ajukan
+                            </a>
+                        } />
 
                         {/* <a
                             className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
