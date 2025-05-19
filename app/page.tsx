@@ -1,5 +1,6 @@
 import { UserConnectFormDialog } from "@/components/form/UserConnectFormDialog";
 import HeroBanner from "@/components/section/HeroBanner";
+import Partners from "@/components/section/Partners";
 import ProcessBanner from "@/components/section/ProcessBanner";
 import WhyChooseUs from "@/components/section/WhyChooseUs";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="">
         <HeroBanner />
         <WhyChooseUs />
+        <Partners />
         <ProcessBanner />
       </main>
     </div>
