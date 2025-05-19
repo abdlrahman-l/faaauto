@@ -30,7 +30,7 @@ export default function HorizontalTimeline() {
                 <div className="blur-[106px] h-56 bg-gradient-to-br  to-blue-400 from-blue-700"></div>
                 <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-blue-600"></div>
             </div>
-            <h1 className="text-2xl lg:text-3xl text-gray-700 text-center font-bold">Bagaimana Kami <strong className="text-blue-700">Membantu</strong> Anda</h1>
+            <h1 className="text-2xl lg:text-3xl text-gray-700 text-center font-bold px-5">Bagaimana Kami <strong className="text-blue-700">Membantu</strong> Anda</h1>
             <div className="flex flex-row space-x-2 lg:flex-col lg:items-center py-8 px-10">
                 {/* Timeline Icons + Dividers */}
                 <div className="flex flex-col lg:flex-row items-center">
