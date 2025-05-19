@@ -2,6 +2,7 @@ import { UserConnectFormDialog } from "@/components/form/UserConnectFormDialog";
 import HeroBanner from "@/components/section/HeroBanner";
 import Partners from "@/components/section/Partners";
 import ProcessBanner from "@/components/section/ProcessBanner";
+import { RequirementList } from "@/components/section/RequirementList";
 import WhyChooseUs from "@/components/section/WhyChooseUs";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <WhyChooseUs />
         <Partners />
         <ProcessBanner />
+        <RequirementList />
       </main>
     </div>
   );
