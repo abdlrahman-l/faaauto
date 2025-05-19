@@ -30,11 +30,11 @@ const logoList = [
 
 const Partners = () => {
     return (
-        <section className='mt-10 min-h-screen flex items-center justify-center flex-col'>
+        <section className='mt-10 min-h-screen flex items-center justify-center flex-col px-10 space-y-4'>
 
-            <div className='max-w-[600px] space-y-10'>
+            <div className='max-w-[600px] space-y-5 lg:space-y-10'>
                 <h1 className='font-bold text-lg lg:text-4xl text-center'>Mitra Leasing <strong className='text-blue-700'>Terpercaya</strong> Kami</h1>
-                <p className='text-center'>Kami hanya bekerja sama dengan perusahaan leasing dan multifinance ternama yang <strong className='text-blue-700'>terdaftar</strong> dan diawasi <strong className='text-red-700'>OJK</strong>. Ini memastikan keamanan dan legalitas setiap transaksi Anda, serta akses ke penawaran terbaik.</p>
+                <p className='text-center text-sm lg:text-lg text-gray-500'>Kami hanya bekerja sama dengan perusahaan leasing dan multifinance ternama yang <strong className='text-blue-700'>terdaftar</strong> dan diawasi <strong className='text-red-700'>OJK</strong>. Ini memastikan keamanan dan legalitas setiap transaksi Anda, serta akses ke penawaran terbaik.</p>
             </div>
             <div className="px-5 lg:px-20 py-5 max-w-[1000px] mx-auto w-full lg:py-20 grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-11">
                 {
@@ -44,12 +44,11 @@ const Partners = () => {
                             {/* <div className='h-[100px] w-[80px] lg:h-[140px] lg:w-[120px] relative '> */}
                             <div className='h-full w-full min-h-16 lg:min-h-25 relative'>
                                 <Image
+                                    objectFit='contain'
                                     fill
                                     src={l.src}
                                     alt={l.alt}
                                     className='absolute'
-                                // height={100}
-                                // width={100}
                                 />
                             </div>
                         </div>
