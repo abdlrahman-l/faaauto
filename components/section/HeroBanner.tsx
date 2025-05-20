@@ -11,16 +11,16 @@ const HeroBanner = () => {
                 <div className="text-left">
                     <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
                         Solusi
-                        <strong className="text-blue-700"> Dana Tunai </strong> Cepat
+                        <strong className="text-blue-900"> Dana Tunai </strong> Cepat
                     </h1>
                     <br />
                     <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
                         Cairkan BPKB Kendaraan Anda s/d
-                        <strong className="text-blue-700"> Rp 1 Miliar  </strong>
+                        <strong className="text-blue-900"> Rp 1 Miliar  </strong>
                     </h2>
                     <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
                         Layanan Seluruh
-                        <strong className="text-blue-700"> Indonesia! </strong>
+                        <strong className="text-blue-900"> Indonesia! </strong>
                     </h2>
 
                     <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
@@ -30,7 +30,7 @@ const HeroBanner = () => {
                     <div className="mt-4 flex gap-4 sm:mt-6">
                         <UserConnectFormDialog button={
                             <a
-                                className="inline-block rounded-md bg-blue-700 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-blue-600"
+                                className="inline-block rounded-md bg-blue-900 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-blue-600"
                                 href="#"
                             >
                                 Konsultasi Gratis & Ajukan

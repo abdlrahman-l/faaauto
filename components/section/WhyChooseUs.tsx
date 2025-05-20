@@ -78,16 +78,16 @@ const itemList = [
 
 const WhyChooseUs = () => {
     return (
-        <div className="bg-white p-2 min-h-screen rounded-md relative" id="why-choose-us">
+        <div className="bg-white p-2 rounded-md relative" id="why-choose-us">
             <div aria-hidden="true" className="absolute inset-0 h-max w-full m-auto grid grid-cols-2  opacity-20">
                 <div className="blur-[106px] h-56 bg-gradient-to-br  to-blue-400 from-blue-700"></div>
                 <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-blue-600"></div>
             </div>
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-2">
                 <div className="md:w-2/3 lg:w-1/2 mt-12 text-gray-100 text-center mx-auto">
-                    <h2 className="my-8 text-2xl font-bold text-gray-800 md:text-4xl">Agen Dana BPKB <strong className='text-blue-700'>Terpercaya</strong> Anda</h2>
+                    <h2 className="my-8 text-2xl font-bold text-gray-800 md:text-4xl">Agen Dana BPKB <strong className='text-blue-900'>Terpercaya</strong> Anda</h2>
                     <p className="text-gray-500">
-                        Kami adalah <strong className='text-blue-700'>FAAAuto</strong>, tim agen profesional dan berpengalaman sejak tahun <strong className='text-blue-700'>2004</strong>, spesialis dalam membantu Anda mendapatkan pinjaman tunai dengan jaminan BPKB Mobil atau Motor dari berbagai leasing dan multifinance ternama yang terdaftar dan diawasi <strong className='text-red-700'>OJK</strong>.
+                        Kami adalah <strong className='text-blue-900'>FAAAuto</strong>, tim agen profesional dan berpengalaman sejak tahun <strong className='text-blue-900'>2004</strong>, spesialis dalam membantu Anda mendapatkan pinjaman tunai dengan jaminan BPKB Mobil atau Motor dari berbagai leasing dan multifinance ternama yang terdaftar dan diawasi <strong className='text-red-700'>OJK</strong>.
 
                         Berperan sebagai mitra terpercaya Anda, kami siap menjembatani dan mencarikan penawaran pinjaman paling kompetitif serta memandu proses pengajuan Anda agar berjalan mudah dan lancar.
                     </p>
@@ -96,7 +96,7 @@ const WhyChooseUs = () => {
                     className="mt-16 grid divide-x divide-y  divide-gray-400 overflow-hidden  rounded-3xl border text-gray-600 border-gray-400 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
                     {
                         itemList.map(i => (
-                            <div key={i.title} className="group relative bg-blue-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                            <div key={i.title} className="group relative bg-blue-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
                                 <div className="relative space-y-4 py-12 p-8">
 
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="size-10">
