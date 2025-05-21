@@ -13,9 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Pinjaman BPKB Mobil & Motor | ACC, Adira, BFI, Buana Finance, Cimb Niaga, Clipan Panin',
   description: 'Ajukan pinjaman jaminan BPKB motor/mobil proses cepat. ACC, Adira, BFI, Buana Finance, Cimb Niaga, Clipan Panin. Terpercaya dan aman!',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    images: ['/image/faauto-banner-1.webp']
+  }
 };
 
 export default function RootLayout({
