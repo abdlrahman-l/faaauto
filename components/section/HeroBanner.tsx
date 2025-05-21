@@ -10,12 +10,12 @@ const HeroBanner = () => {
             >
                 <div className="text-left">
                     <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                        Solusi
-                        <strong className="text-blue-900"> Dana Tunai </strong> Cepat
+                        Pinjaman <strong className="text-blue-900">Dana Cepat </strong>Jaminan 
+                        <strong className="text-blue-900"> BPKB  </strong> Motor dan Mobil
                     </h1>
                     <br />
                     <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
-                        Cairkan BPKB Kendaraan Anda s/d
+                        Gadai BPKB Motor atau Mobil Tanpa Ribet s/d
                         <strong className="text-blue-900"> Rp 1 Miliar  </strong>
                     </h2>
                     <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
@@ -51,6 +51,7 @@ const HeroBanner = () => {
                     alt='Kendaraan'
                     width={1200}
                     height={1200}
+                    priority
                 />
 
             </div>

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Pinjaman Dana BPKB Mobil & Motor Cepat Cair | Agen OJK Terpercaya',
-  description: 'Pinjaman Dana BPKB Mobil & Motor cepat cair s/d 1 Miliar. Bermitra leasing OJK terpercaya. Taksasi tinggi, bunga kompetitif. Ajukan via agen ahli, layanan se-Indonesia!',
+  title: 'Pinjaman BPKB Mobil & Motor | ACC, Adira, BFI, Buana Finance, Cimb Niaga, Clipan Panin',
+  description: 'Ajukan pinjaman jaminan BPKB motor/mobil proses cepat. ACC, Adira, BFI, Buana Finance, Cimb Niaga, Clipan Panin. Terpercaya dan aman!',
 };
 
 export default function RootLayout({
