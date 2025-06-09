@@ -1,8 +1,15 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { UserConnectFormDialog } from '../form/UserConnectFormDialog'
 
-const HeroBanner = () => {
+type HeroBannerProps = {
+    title: ReactNode;
+    subTitle: ReactNode;
+    description: ReactNode;
+    imageSrc: string;
+}
+
+const HeroBanner = ({ title, subTitle, description, imageSrc }: HeroBannerProps) => {
     return (
         <section className="bg-white lg:grid lg:h-screen lg:place-content-center px-2 lg:px-10" id="hero-banner">
             <div
@@ -10,21 +17,14 @@ const HeroBanner = () => {
             >
                 <div className="text-left">
                     <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                        Pinjaman <strong className="text-blue-900">Dana Cepat </strong>Jaminan 
-                        <strong className="text-blue-900"> BPKB  </strong> Motor dan Mobil
+                        {title}
                     </h1>
                     <br />
                     <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
-                        Gadai BPKB Motor atau Mobil Tanpa Ribet s/d
-                        <strong className="text-blue-900"> Rp 1 Miliar  </strong>
+                        {subTitle}
                     </h2>
-                    <h2 className="text-xl font-medium text-gray-700 sm:text-2xl">
-                        Layanan Seluruh
-                        <strong className="text-blue-900"> Indonesia! </strong>
-                    </h2>
-
                     <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
-                        Dengan pengalaman lebih dari <strong>20</strong> tahun (Sejak <strong>2004</strong>), kami sebagai agen bermitra dengan Leasing OJK Terpercaya siap memberikan layanan personal. Kami bantu proses BPKB dan carikan solusi dana terbaik untuk Anda.
+                        {description}
                     </p>
                     <br />
                     <div className="mt-4 flex gap-4 sm:mt-6">
@@ -47,7 +47,7 @@ const HeroBanner = () => {
                 </div>
 
                 <Image
-                    src="/image/hero-banner-1.webp"
+                    src={imageSrc}
                     alt='Kendaraan'
                     width={1200}
                     height={1200}

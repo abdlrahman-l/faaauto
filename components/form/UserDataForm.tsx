@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { ReactNode, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -60,6 +61,8 @@ export default function UserDataForm({
 }: Props) {
     const [isLoading, setIsLoading] = useState(false)
 
+    const pathname = usePathname();
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -67,6 +70,10 @@ export default function UserDataForm({
             region: "",
             phoneNumber: "",
         },
+    })
+
+    console.log({
+        pathname
     })
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
@@ -77,7 +84,9 @@ export default function UserDataForm({
 
             onSubmitForm?.();
 
-            const waMessage = `Halo Agen Dana BPKB FAAAuto, Saya ${values.name} dari ${values.region}. Saya tertarik dengan solusi dana BPKB dan mohon informasi/konsultasi lebih lanjut. Terima kasih.`
+            const solution = pathname === '/' ? 'solusi dana BPKB' : 'kredit mobil bekas';
+
+            const waMessage = `Halo Agen Dana BPKB FAAAuto, Saya ${values.name} dari ${values.region}. Saya tertarik dengan ${solution} dan mohon informasi/konsultasi lebih lanjut. Terima kasih.`
 
             const encodedMessage = encodeURIComponent(waMessage)
             const url = `https://wa.me/${process.env.NEXT_PUBLIC_PHONE_NUMBER_WA}?text=${encodedMessage}`;

@@ -13,17 +13,17 @@ import { SVGProps } from "react"
 
 const menuList = [
     {
-        title: 'Tentang Kami',
-        href: '#hero-banner'
+        title: 'Pinjaman Dana BPKB',
+        href: '/'
     },
     {
-        title: 'Keunggulan',
-        href: '#why-choose-us'
+        title: 'Kredit Mobil Bekas',
+        href: '/kredit-mobil-bekas'
     },
-    {
-        title: 'Cara Kerja / Proses',
-        href: '#process-banner'
-    },
+    // {
+    //     title: 'Cara Kerja / Proses',
+    //     href: '#process-banner'
+    // },
     // {
     //     title: 'Tentang Kami',
     //     href: '#hero-banner'
