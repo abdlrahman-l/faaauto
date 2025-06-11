@@ -1,3 +1,4 @@
+import CreditBenefits from "@/components/section/CreditBenefits";
 import HeroBanner from "@/components/section/HeroBanner";
 import Partners from "@/components/section/Partners";
 
@@ -23,12 +24,11 @@ export default function CreditPage() {
             </>
           }
           description={
-            // <>Dengan pengalaman lebih dari <strong>20</strong> tahun (Sejak <strong>2004</strong>), kami sebagai agen bermitra dengan Leasing OJK Terpercaya siap memberikan layanan personal. Kami bantu proses BPKB dan carikan solusi dana terbaik untuk Anda.</>
             <>Kami fasilitasi pembelian mobil bekas idaman Anda di Jabodetabek dengan proses kredit mudah, cepat <strong>3-7</strong> hari, bunga <strong>flat kompetitif</strong>, dan DP mulai <strong>20%</strong> dengan opsi <strong>DP rendah</strong> serta tenor hingga 5 tahun.</>
           }
           imageSrc="/image/pajero.webp"
         />
-
+        <CreditBenefits />
         <Partners />
       </main>
     </div>
